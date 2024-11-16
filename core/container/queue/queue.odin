@@ -52,7 +52,7 @@ init_with_contents :: proc(q: ^$Q/Queue($T), backing: []T) -> bool {
 }
 
 // Procedure to destroy a queue
-destroy :: proc(q: ^$Q/Queue($T)) {
+destroy :: proc(q: $Q/Queue($T)) {
 	delete(q.data)
 }
 
