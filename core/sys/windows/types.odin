@@ -153,10 +153,10 @@ LPWSABUF   :: ^WSABUF
 
 LPWSAOVERLAPPED :: ^OVERLAPPED
 LPWSAOVERLAPPED_COMPLETION_ROUTINE :: #type proc "system" (
-	dwError: DWORD,
+	dwError:       DWORD,
 	cbTransferred: DWORD,
-	lpOverlapped: LPWSAOVERLAPPED,
-	dwFlags: DWORD,
+	lpOverlapped:  LPWSAOVERLAPPED,
+	dwFlags:       DWORD,
 )
 
 LPCVOID :: rawptr
